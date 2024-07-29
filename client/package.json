@@ -5,7 +5,8 @@
   "keywords": [],
   "admindasboard": "src/index.js",
   "dependencies": {
-    "@surma/rollup-plugin-off-main-thread": "^2.2.3",
+
+    
     "axios": "0.27.2",
     "bootstrap": "^4.6.0",
     "react": "17.0.2",
