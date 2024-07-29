@@ -16,7 +16,7 @@ const EditContact = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/api/data');
+        const response = await axios.get('https://quadiro-se89.onrender.com/api/data');
       
         setImgItems(response.data);
       } catch (error) {
@@ -42,7 +42,7 @@ const EditContact = () => {
 
   const updateContact = async (data) => {
     try {
-      const response = await fetch(`http://localhost:8080/api/data/${data.id}`, {
+      const response = await fetch(`https://quadiro-se89.onrender.com/api/data/${data.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

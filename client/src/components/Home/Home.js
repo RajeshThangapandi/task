@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/api/data');
+        const response = await axios.get('https://quadiro-se89.onrender.com/api/data');
        // Log the API response
         setImgItems(response.data);
       } catch (error) {
@@ -27,7 +27,7 @@ const Home = () => {
 const deleteContact=async function(id){
   try {
     // Send DELETE request to the server
-    await axios.delete(`http://localhost:8080/api/data/${id}`);
+    await axios.delete(`https://quadiro-se89.onrender.com/api/data/${id}`);
     
     // Update state to remove the deleted contact
     setImgItems(imgItems.filter(contact => contact.id !== id));

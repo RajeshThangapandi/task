@@ -9,7 +9,7 @@ const UserDash = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/api/data');
+        const response = await axios.get('https://quadiro-se89.onrender.com/api/data');
         setImgItems(response.data);
       } catch (error) {
         console.error('Error fetching images:', error);

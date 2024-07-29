@@ -20,7 +20,7 @@ const Signup = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:8080/api/admin";
+			const url = "https://quadiro-se89.onrender.com/api/admin";
 
 			const { data: res } = await axios.post(url, data);
 			
