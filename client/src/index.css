@@ -1,0 +1,12 @@
+/* Add this to your global CSS file (e.g., index.css) */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #root {
+    height: 100%;
+    width: 100%;
+   /* Center content vertically */
+  }
+  
